@@ -1,0 +1,20 @@
+#+title: Sveltekit app with TailwindCSS, Vite and Typescript
+
+
+** Setting up
+   #+BEGIN_SRC shell
+   NAME="sveltekit-vite-tailwind-app"
+   npm init svelte@next $NAME 
+   # Choose your options 
+
+   cd $NAME
+   npm install
+   git init && git add -A && git commit -m "Initial commit"
+   npm run dev -- --open
+   #+END_SRC
+  
+   #+BEGIN_SRC shell
+   npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+   npm install -D postcss-import postcss-nesting
+   npm install -D postcss-cli concurrently cross-env
+   #+END_SRC
